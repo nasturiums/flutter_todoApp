@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
 const darksss = Color(0xFF424242);
+const primaryKcolor = Color(0xFF4e5ae8);
 
 class Themes {
   static final light = ThemeData(
@@ -29,4 +30,20 @@ TextStyle get headingStyle {
           color: Get.isDarkMode ? Colors.white : Colors.black,
           fontSize: 30,
           fontWeight: FontWeight.bold));
+}
+
+TextStyle get titleStyle {
+  return GoogleFonts.lato(
+      textStyle: TextStyle(
+          color: Get.isDarkMode ? Colors.white : Colors.black,
+          fontSize: 16,
+          fontWeight: FontWeight.w400));
+}
+
+TextStyle get subTitleStyle {
+  return GoogleFonts.lato(
+      textStyle: TextStyle(
+          color: Get.isDarkMode ? Colors.grey[100] : Colors.grey[700],
+          fontSize: 14,
+          fontWeight: FontWeight.w400));
 }
